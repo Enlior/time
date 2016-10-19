@@ -1,0 +1,71 @@
+html:
+<div style="z-index: 99999; visibility: visible; width: 300px;
+	 position: fixed; height: 214px; background: none 0% 0% repeat scroll rgb(255, 255, 255);" id="eMeng">
+      <div style=" height:20px; position: absolute; right:1px;">
+             <div onclick="closeDiv()" style="color: #FFF; width:10px; height:10px; float:right; 
+                    margin-right:4px; text-align:center; line-height:10px; font-size:14px; cursor:pointer">
+                        <img src="images/close.jpg" border="0">
+             </div>
+      </div>
+      <div style="width:300px; height:214px; margin:0 auto;">	 
+            <img style="border:none;" src="images/cup_t.png">
+      </div>
+</div>
+
+
+JS:
+//弹窗
+window.onload = getMsg;
+window.onresize = resizeDiv;
+window.onerror = function(){}
+function $_(id) {return document.getElementById(id);}
+
+var divT,divL,divW,divH,docH,docW,docST,docSL,objTimer,i = 0;
+function getMsg()
+{
+try{
+divT = parseInt($_("eMeng").style.top,10); //层top位置
+divL = parseInt($_("eMeng").style.left,10); //层left位置
+divH = parseInt($_("eMeng").offsetHeight,10);//层宽
+divW = parseInt($_("eMeng").offsetWidth,10);//层高
+docW = document.documentElement.clientWidth;//窗口宽
+docH = document.documentElement.clientHeight;//窗口高
+docST=document.documentElement.scrollTop;
+docSL=document.documentElement.scrollLeft;
+$_("eMeng").style.top = parseInt(docST,10) + docH + 10+"px";
+$_("eMeng").style.left = parseInt(docSL,10) + docW - divW+"px";
+$_("eMeng").style.visibility="visible"; 
+objTimer = setInterval("moveDiv()",10);
+}
+catch(e){}
+}
+function resizeDiv()
+{
+try{
+divH = parseInt($_("eMeng").offsetHeight,10);
+divW = parseInt($_("eMeng").offsetWidth,10);
+docW = document.documentElement.clientWidth;
+docH = document.documentElement.clientHeight;
+$_("eMeng").style.top = docH - divH + parseInt(document.documentElement.scrollTop,10)+"px";
+$_("eMeng").style.left = docW - divW + parseInt(document.documentElement.scrollLeft,10)+"px";
+}
+catch(e){}
+}
+function moveDiv()
+{
+try{
+if(parseInt($_("eMeng").style.top,10) <= (docH - divH + parseInt(document.documentElement.scrollTop,10)))
+{
+window.clearInterval(objTimer)
+objTimer = setInterval("resizeDiv()",1)
+}
+divT = parseInt($_("eMeng").style.top,10);
+$_("eMeng").style.top = divT - 3+"px";//速度越大越快
+}
+catch(e){}
+}
+function closeDiv()
+{
+$_('eMeng').style.visibility='hidden';
+if(objTimer) window.clearInterval(objTimer)
+}

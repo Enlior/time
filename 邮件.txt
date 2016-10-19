@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>7月 商业财经 齐惠聚【优惠抢订中】?</title>
+<style type="text/css">
+	*{ margin:0; padding:0;}
+	.wrap{ width:1002px; height:auto; margin:0 auto;}
+	img{ border:none;}
+</style>
+</head>
+<body>
+	<div class="wrap">
+		<p><a href="http://www.dooland.com/magazine/special/cjdy/" target="_blank">
+			<img src="http://www.dooland.com/magazine/special/cjdy/em/images/1.jpg"></a></p>
+	    	<p><a href="http://www.dooland.com/magazine/special/cjdy/" target="_blank">
+			<img src="http://www.dooland.com/magazine/special/cjdy/em/images/2.jpg"></a></p>
+		<p><a href="http://www.dooland.com/magazine/special/cjdy/" target="_blank">
+			<img src="http://www.dooland.com/magazine/special/cjdy/em/images/3.jpg"></a></p>
+		<p><a href="http://www.dooland.com/magazine/special/cjdy/" target="_blank">
+			<img src="http://www.dooland.com/magazine/special/cjdy/em/images/4.jpg"></a></p>
+        	<p><a href="http://www.dooland.com/magazine/special/cjdy/" target="_blank">
+			<img src="http://www.dooland.com/magazine/special/cjdy/em/images/5.jpg"></a></p>
+	    	<p><a href="http://www.dooland.com/magazine/special/cjdy/" target="_blank">
+			<img src="http://www.dooland.com/magazine/special/cjdy/em/images/6.jpg"></a></p>
+	</div>
+</body>
+</html>
